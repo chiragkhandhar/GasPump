@@ -18,7 +18,6 @@ public class DS1 extends DataStore {
     @Override
     public void setTemp_c(int temp_c) {
         this.temp_c = temp_c;
-
     }
 
     @Override

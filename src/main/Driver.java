@@ -11,7 +11,5 @@ public class Driver {
         System.out.println("|    SSA | Final Project | GasPump       | ");
         System.out.println(" ----------------------------------------");
 
-
-
     }
 }
