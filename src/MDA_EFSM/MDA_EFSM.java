@@ -9,7 +9,7 @@ public class MDA_EFSM {
     public OP op;
     public int k;
     public State S;
-    public State LS[];
+    public State [] LS;
 
     public MDA_EFSM()
     {
@@ -25,6 +25,8 @@ public class MDA_EFSM {
         LS[6] = new S8(this);
         change_state(0);
     }
+
+    // ---------------------------------- Utility Functions ----------------------------------
     public void intialize(AbstractFactory af, DataStore d) {
         op.initialize(af, d);
     }
@@ -56,6 +58,11 @@ public class MDA_EFSM {
     public void Approved()
     {
         S.Approved();
+    }
+
+    public void Reject()
+    {
+        S.Reject();
     }
 
     public void StartPump()
@@ -104,3 +111,5 @@ public class MDA_EFSM {
     }
 
 }
+
+
