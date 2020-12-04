@@ -148,7 +148,7 @@ public class OP {
 
     public void SetW(int w)
     {
-        set_W.set_W(w);
+        set_W.set_W(dataStore,w);
     }
 
     public void EjectCard()
