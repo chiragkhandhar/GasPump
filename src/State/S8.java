@@ -68,7 +68,22 @@ public class S8 extends State {
     }
 
     @Override
-    public void IncorrectPin(int k) {
+    public void IncorrectPin(int max) {
+        if (m.getObject().S == m.getObject().LS[6])
+        {
+            if(m.getObject().k <= max)
+            {
+                m.getObject().op.WrongPinMsg();
+                m.getObject().k = m.getObject().k + 1 ;
+            }
+            else if (m.getObject().k > max)
+            {
+                m.getObject().op.WrongPinMsg();
+                m.getObject().op.EjectCard();
+            }
+        } else {
+            System.out.println("This operation is not Valid on current state");
+        }
 
     }
 
