@@ -71,7 +71,7 @@ public class MDA_EFSM {
 
     public void StartPump()
     {
-        S.Pump();
+        S.StartPump();
     }
 
     public void Pump()

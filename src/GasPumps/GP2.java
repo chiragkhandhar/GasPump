@@ -88,10 +88,12 @@ public class GP2 {
 
     public void StartPump()
     {
-        if (d2.getPrice() > 0)
+
+        if (d2.getFloatPrice() > 0)
         {
             m.StartPump();
         }
+
     }
 
     public void PumpGallon()

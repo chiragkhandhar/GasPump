@@ -9,37 +9,45 @@ public class S3 extends State {
 
     @Override
     public void Activate() {
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
 
     }
 
     @Override
     public void start() {
-
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
     }
 
     @Override
     public void PayCash() {
-
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
     }
 
     @Override
     public void PayCredit() {
-
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
     }
 
     @Override
     public void PayDebit() {
-
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
     }
 
     @Override
     public void Approved() {
-
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
     }
 
     @Override
     public void Reject() {
-
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
     }
 
     @Override
@@ -58,7 +66,16 @@ public class S3 extends State {
 
     @Override
     public void StartPump() {
-
+        if (m.getObject().S == m.getObject().LS[4])
+        {
+            m.getObject().op.SetInitialValues();
+            System.out.println("|                                        |");
+            System.out.println("|            Pump Started                |");
+            System.out.println("|                                        |");
+            m.getObject().change_state(5);
+        } else {
+            System.out.println("This operation is not Valid on current state");
+        }
     }
 
     @Override
@@ -75,21 +92,25 @@ public class S3 extends State {
 
     @Override
     public void Pump() {
-
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
     }
 
     @Override
     public void StopPump() {
-
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
     }
 
     @Override
     public void IncorrectPin(int k) {
-
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
     }
 
     @Override
     public void CorrectPin() {
-
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
     }
 }
