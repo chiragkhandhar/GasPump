@@ -18,6 +18,7 @@ public class S0 extends State {
         if (m.getObject().S == m.getObject().LS[1])
         {
             m.getObject().op.PayMsg();
+            m.getObject().op.InitializeData();
             m.getObject().change_state(2);
 
         } else {

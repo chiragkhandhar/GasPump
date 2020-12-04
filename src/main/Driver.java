@@ -270,7 +270,7 @@ public class Driver {
                 {
                     System.out.println("|-----Operation:  PayDebit(String p)-----|");
                     System.out.println("|                                        |");
-                    System.out.println("|            Enter p                     |");
+                    System.out.println("|        Enter your Debit PIN            |");
                     System.out.println("|                                        |");
                     String p = sc.next();
                     gp2.PayDebit(p);
@@ -281,7 +281,7 @@ public class Driver {
                 {
                     System.out.println("|-------Operation:  Pin(String x)--------|");
                     System.out.println("|                                        |");
-                    System.out.println("|            Enter x                     |");
+                    System.out.println("|        Confirm your Debit PIN          |");
                     System.out.println("|                                        |");
                     String x = sc.next();
                     gp2.Pin(x);

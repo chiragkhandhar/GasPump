@@ -53,9 +53,15 @@ public class S1 extends State {
 
     @Override
     public void PayDebit() {
-        System.out.println("|   Invalid Operation. Select Payment    |");
-        System.out.println("|             2. By Credit               |");
-        System.out.println("|             6. By Cash                 |");
+        if (m.getObject().S == m.getObject().LS[2])
+        {
+            m.getObject().op.EnterPinMsg();
+            m.getObject().op.StorePin();
+            m.getObject().k = 0;
+            m.getObject().change_state(6);
+        } else {
+            System.out.println("This operation is not Valid on current state");
+        }
     }
 
     @Override
