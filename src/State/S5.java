@@ -59,12 +59,25 @@ public class S5 extends State {
 
     @Override
     public void Pump() {
-       
+        if (m.getObject().S == m.getObject().LS[5])
+        {
+            m.getObject().op.PumpGasUnit();
+            m.getObject().op.GasPumpedMsg();
+        } else {
+            System.out.println("This operation is not Valid on current state");
+        }
 
     }
 
     @Override
     public void StopPump() {
+        if (m.getObject().S == m.getObject().LS[5])
+        {
+            m.getObject().op.PrintReceipt();
+            m.getObject().change_state(1);
+        } else {
+            System.out.println("This operation is not Valid on current state");
+        }
 
     }
 
