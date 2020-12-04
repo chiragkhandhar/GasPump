@@ -8,13 +8,21 @@ public class S0 extends State {
     }
 
     @Override
-    public void create() {
+    public void Activate() {
+        System.out.println("You have already activated the gas pump");
 
     }
 
     @Override
     public void start() {
+        if (m.getObject().S == m.getObject().LS[1])
+        {
+            m.getObject().op.PayMsg();
+            m.getObject().change_state(1);
 
+        } else {
+            System.out.println("This operation is not Valid on current state");
+        }
     }
 
     @Override

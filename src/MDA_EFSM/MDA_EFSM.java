@@ -33,6 +33,10 @@ public class MDA_EFSM {
 
     public void change_state(int a) {
         S = LS[a];
+        System.out.println("|----------------------------------------|");
+        System.out.println("|           Current State = " + detectState(a) + "           |");
+        System.out.println("|                                        |");
+
     }
 
     public MDA_EFSM getObject() {
@@ -43,7 +47,7 @@ public class MDA_EFSM {
 
     public void Activate()
     {
-        S.create();
+        S.Activate();
     }
 
     public void Start(){
@@ -110,6 +114,30 @@ public class MDA_EFSM {
         S.PayDebit();
     }
 
+    // Utility function to check the current state
+
+    String detectState (int a)
+    {
+        switch (a)
+        {
+            case 0:
+                return "Activate";
+            case 1:
+                return "S0";
+            case 2:
+                return "S1";
+            case 3:
+                return "S2";
+            case 4:
+                return "S3";
+            case 5:
+                return "S5";
+            case 6:
+                return "S8";
+            default:
+                return "Invalid";
+        }
+    }
 }
 
 

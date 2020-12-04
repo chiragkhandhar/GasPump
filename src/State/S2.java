@@ -9,7 +9,7 @@ public class S2 extends State {
     }
 
     @Override
-    public void create() {
+    public void Activate() {
 
     }
 

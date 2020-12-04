@@ -85,4 +85,18 @@ public class GP1 {
     {
         m.StopPump();
     }
+
+    // Utility function to print datastore
+    public void printDataStore()
+    {
+        System.out.println("-----------ds1--------------");
+        System.out.println("temp_c = " + d1.getTemp_c());
+        System.out.println("cash = " + d1.getCash());
+        System.out.println("total = " + d1.getTotal());
+        System.out.println("L = " + d1.getL());
+        System.out.println("price = " + d1.getPrice());
+        System.out.println("temp_a = " + d1.getTemp_a());
+        System.out.println("w = " + d1.getW());
+        System.out.println("----------------------------");
+    }
 }

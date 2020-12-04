@@ -10,7 +10,7 @@ public  class State {
         this.m = mda_efsm;
     }
 
-    public void create()
+    public void Activate()
     {
         System.out.println("In State Class");
     }
