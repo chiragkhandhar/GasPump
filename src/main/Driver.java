@@ -86,7 +86,7 @@ public class Driver {
                 {
                     System.out.println("|------Operation:  Activate(int a)-------|");
                     System.out.println("|                                        |");
-                    System.out.println("|    Enter value of the parameter a:     |");
+                    System.out.println("|        Enter price of the Gas:         |");
                     System.out.println("|                                        |");
                     int a = sc.nextInt();
                     gp1.Activate(a);
@@ -230,13 +230,13 @@ public class Driver {
                 {
                     System.out.println("|-Op Activate(float a, float b, float c)-|");
                     System.out.println("|                                        |");
-                    System.out.println("|    Enter value of the a (Regular):     |");
+                    System.out.println("|     Enter price of Regular Gas:        |");
                     System.out.println("|                                        |");
                     float a = sc.nextFloat();
-                    System.out.println("|    Enter value of the b (Diesel):      |");
+                    System.out.println("|      Enter price of Diesel Gas:        |");
                     System.out.println("|                                        |");
                     float b = sc.nextFloat();
-                    System.out.println("|    Enter value of the c (Super):       |");
+                    System.out.println("|       Enter price of Super Gas:        |");
                     System.out.println("|                                        |");
                     float c = sc.nextFloat();
                     gp2.Activate(a, b , c);

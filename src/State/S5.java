@@ -9,52 +9,62 @@ public class S5 extends State {
 
     @Override
     public void Activate() {
-
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
     }
 
     @Override
     public void start() {
-
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
     }
 
     @Override
     public void PayCash() {
-
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
     }
 
     @Override
     public void PayCredit() {
-
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
     }
 
     @Override
     public void PayDebit() {
-
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
     }
 
     @Override
     public void Approved() {
-
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
     }
 
     @Override
     public void Reject() {
-
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
     }
 
     @Override
     public void SelectGas(int g) {
-
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
     }
 
     @Override
     public void StartPump() {
-
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
     }
 
     @Override
     public void Cancel() {
-
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
     }
 
     @Override
@@ -83,11 +93,13 @@ public class S5 extends State {
 
     @Override
     public void IncorrectPin(int k) {
-
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
     }
 
     @Override
     public void CorrectPin() {
-
+        System.out.println("|          Invalid Operation.            |");
+        System.out.println("|                                        |");
     }
 }
