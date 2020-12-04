@@ -7,6 +7,7 @@ public class DisplayMenu1 extends  DisplayMenu {
     public void displayMenu(DataStore dst) {
         System.out.println("|                Select                  |");
         System.out.println("|            7. Start Pump               |");
+        System.out.println("|            4. Cancel                   |");
 
     }
 }

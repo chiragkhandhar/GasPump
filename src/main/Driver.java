@@ -55,7 +55,7 @@ public class Driver {
         System.out.println("|                                        | ");
         System.out.println("|          4. Cancel()                   |");
         System.out.println("|                                        | ");
-        System.out.println("|          5. Approved()                 |");
+        System.out.println("|          5. Approve()                  |");
         System.out.println("|                                        | ");
         System.out.println("|          6. PayCash(int)               |");
         System.out.println("|                                        |");
@@ -77,8 +77,8 @@ public class Driver {
         {
             System.out.println("|------------Select Operation------------|");
             System.out.println("|                                        |-------------------------------------------------------------------------------------------------------");
-            System.out.println("| 0:Activate | 1: Start | 2:PayCredit | 3: Reject | 4: Cancel | 5: Approved | 6: PayCash | 7: StartPump | 8: PumpLiter | 9: StopPump |  99: Quit |");
-            System.out.println("|                                        |-------------------------------------------------------------------------------------------------------");
+            System.out.println("| 0:Activate | 1: Start | 2:PayCredit | 3: Reject | 4: Cancel | 5: Approve | 6: PayCash | 7: StartPump | 8: PumpLiter | 9: StopPump |  99: Quit |");
+            System.out.println("|------------------------------------------------------------------------------------------------------------------------------------------------");
             ch = sc.nextInt();
             switch (ch)
             {
@@ -111,7 +111,6 @@ public class Driver {
 
                 case 3: //Reject
                 {
-                    System.out.println("|---------Operation:  Reject()-----------|");
                     System.out.println("|                                        |");
                     gp1.Reject();
                     break;
@@ -119,7 +118,6 @@ public class Driver {
 
                 case 4: //Cancel
                 {
-                    System.out.println("|-----------Operation:  Cancel()---------|");
                     System.out.println("|                                        |");
                     gp1.Cancel();
                     break;
@@ -127,17 +125,14 @@ public class Driver {
 
                 case 5: //Approved
                 {
-                    System.out.println("|--------Operation:  Approved()----------|");
-                    System.out.println("|                                        |");
                     gp1.Approved();
                     break;
                 }
 
                 case 6:  //PayCash
                 {
-                    System.out.println("|-------Operation:  PayCash(int c)-------|");
                     System.out.println("|                                        |");
-                    System.out.println("|    Enter value of the parameter c:     |");
+                    System.out.println("|       Enter the Cash Amount ($):       |");
                     System.out.println("|                                        |");
                     int c = sc.nextInt();
                     gp1.PayCash(c);
@@ -198,7 +193,7 @@ public class Driver {
         System.out.println("|                                        | ");
         System.out.println("|          6. Cancel()                   |");
         System.out.println("|                                        | ");
-        System.out.println("|          7. Approved()                 |");
+        System.out.println("|          7. Approve()                  |");
         System.out.println("|                                        | ");
         System.out.println("|          8. Diesel()                   |");
         System.out.println("|                                        |");
@@ -225,9 +220,9 @@ public class Driver {
         while (ch != 99)
         {
             System.out.println("|------------Select Operation------------|");
-            System.out.println("|                                        |-------------------------------------------------------------------------------------------------------");
-            System.out.println("| 0:Activate | 1: Start | 2:PayCredit | 3: Reject | 4: PayDebit | 5: Pin | 6: Cancel | 7: Approved | 8: Diesel | 9: Regular | 10: Super | 11: StartPump | 12: PumpGallon | 13: StopPump | 14: FullTank | 99: Quit |");
-            System.out.println("|                                        |-------------------------------------------------------------------------------------------------------");
+            System.out.println("|                                        |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+            System.out.println("| 0:Activate | 1: Start | 2:PayCredit | 3: Reject | 4: PayDebit | 5: Pin | 6: Cancel | 7: Approve | 8: Diesel | 9: Regular | 10: Super | 11: StartPump | 12: PumpGallon | 13: StopPump | 14: FullTank | 99: Quit |");
+            System.out.println("|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
             ch = sc.nextInt();
             switch (ch)
             {
@@ -266,7 +261,6 @@ public class Driver {
 
                 case 3: //Reject
                 {
-                    System.out.println("|---------Operation:  Reject()-----------|");
                     System.out.println("|                                        |");
                     gp2.Reject();
                     break;
@@ -296,7 +290,6 @@ public class Driver {
 
                 case 6: // Cancel
                 {
-                    System.out.println("|----------Operation:  Cancel()----------|");
                     System.out.println("|                                        |");
                     gp2.Cancel();
                     break;
@@ -304,7 +297,6 @@ public class Driver {
 
                 case 7: //Approved
                 {
-                    System.out.println("|--------Operation:  Approved()----------|");
                     System.out.println("|                                        |");
                     gp2.Approved();
                     break;
@@ -312,7 +304,6 @@ public class Driver {
 
                 case 8:  //Diesel
                 {
-                    System.out.println("|----------Operation:  Diesel()----------|");
                     System.out.println("|                                        |");
                     gp2.Diesel();
                     break;
@@ -320,7 +311,6 @@ public class Driver {
 
                 case 9:  //Regular
                 {
-                    System.out.println("|----------Operation:  Regular()---------|");
                     System.out.println("|                                        |");
                     gp2.Regular();
                     break;
@@ -328,7 +318,6 @@ public class Driver {
 
                 case 10:  //Super
                 {
-                    System.out.println("|-----------Operation:  Super()----------|");
                     System.out.println("|                                        |");
                     gp2.Super();
                     break;

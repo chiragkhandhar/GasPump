@@ -44,7 +44,16 @@ public class S3 extends State {
 
     @Override
     public void SelectGas(int g) {
-
+        if (m.getObject().S == m.getObject().LS[4])
+        {
+            m.getObject().op.SetPrice(g);
+            System.out.println("|                                        |");
+            System.out.println("|            11. StartPump               |");
+            System.out.println("|             6. Cancel                  |");
+            System.out.println("|                                        |");
+        } else {
+            System.out.println("This operation is not Valid on current state");
+        }
     }
 
     @Override
@@ -54,6 +63,13 @@ public class S3 extends State {
 
     @Override
     public void Cancel() {
+        if (m.getObject().S == m.getObject().LS[4])
+        {
+            m.getObject().op.CancelMsg();
+            m.getObject().change_state(1);
+        } else {
+            System.out.println("This operation is not Valid on current state");
+        }
 
     }
 

@@ -37,6 +37,17 @@ public class S1 extends State {
 
     @Override
     public void PayCredit() {
+        if (m.getObject().S == m.getObject().LS[2])
+        {
+            m.getObject().op.SetW(1);
+            m.getObject().change_state(3);
+            System.out.println("|                                        | ");
+            System.out.println("|       - Approve Transaction            | ");
+            System.out.println("|       - Reject Transaction             | ");
+            System.out.println("|                                        | ");
+        } else {
+            System.out.println("This operation is not Valid on current state");
+        }
 
     }
 

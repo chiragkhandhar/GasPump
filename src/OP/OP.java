@@ -93,7 +93,7 @@ public class OP {
 
     public void SetPrice(int price)
     {
-        setPrice.setPrice(price);
+        setPrice.setPrice(dataStore, price);
     }
 
     public void SetInitialValues()

@@ -4,7 +4,7 @@ import DataStore.DataStore;
 
 public class SetPrice1 extends SetPrice {
     @Override
-    public void setPrice(int price) {
+    public void setPrice(DataStore dst, int price) {
 
     }
 }
