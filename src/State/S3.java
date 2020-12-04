@@ -73,6 +73,8 @@ public class S3 extends State {
             System.out.println("|            Pump Started                |");
             System.out.println("|                                        |");
             m.getObject().change_state(5);
+            System.out.println("|   Start Pumping Gas by selecting Pump  |");
+            System.out.println("|                                        |");
         } else {
             System.out.println("This operation is not Valid on current state");
         }

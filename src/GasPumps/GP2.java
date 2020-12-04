@@ -51,14 +51,23 @@ public class GP2 {
 
     public void Pin(String x)
     {
-        if (d2.getPin().equals(x))
+        if(d2.getPin() != null)
         {
-            m.CorrectPin();
+            if (d2.getPin().equals(x))
+            {
+                m.CorrectPin();
+            }
+            else
+            {
+                m.IncorrectPin(1);
+            }
         }
         else
         {
-            m.IncorrectPin(1);
+            System.out.println("|     Please Select PayDebit First       |");
+            System.out.println("|                                        |");
         }
+
     }
 
     public void Cancel()
