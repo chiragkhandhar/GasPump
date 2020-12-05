@@ -85,6 +85,7 @@ public class S3 extends State {
         if (m.getObject().S == m.getObject().LS[4])
         {
             m.getObject().op.CancelMsg();
+            m.getObject().op.ReturnCash();
             m.getObject().change_state(1);
         } else {
             System.out.println("This operation is not Valid on current state");
