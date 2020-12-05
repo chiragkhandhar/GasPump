@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GP:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/GP_jar</output-path>
+    <root id="archive" name="GP.jar">
+      <element id="module-output" name="GP" />
+    </root>
+  </artifact>
+</component>
